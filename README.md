@@ -1,1 +1,3 @@
-This repository contains folders for each hw solution, e.g. hw-solution-1.
+Deployed website - https://aholdermhci.github.io/hw-files/hw-2-solution
+
+Repository link - https://aholdermhci.github.io/hw-files
