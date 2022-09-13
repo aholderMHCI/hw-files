@@ -3,6 +3,37 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+hr {
+    width: 100%;
+    margin-left: 2%;
+    height: 3px;
+    background-color: black;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.top-links {
+    display: flex;
+    width: 500px;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 2%;
+    ;
+}
+
+.top-links h1 {
+    width: auto;
+}
+
+.selected {
+    font-weight: 600;
+    height: auto;
+    background-color: yellow;
+}
+
+
 #wrapper {
 width: 100vw;
 height: auto;
@@ -30,17 +61,11 @@ h1 {
     font-weight: 100;
 }
 
-.selected {
-    font-weight: 600;
-    width: 100%;
-    height: auto;
-    display: inline;
-    background-color: yellow;
-}
 
 .container {
     margin-top: 10%;
     margin-bottom: 10%;
+    display: flex;
 }
 
 h2 {
@@ -95,22 +120,35 @@ a {
 }
 
 /* Product Detail Page */
+
+.detail-flex {
+display: flex;
+}
+
+.detail-right {
+    margin-right: auto;
+}
+
+
 #product-details img {
-    width: 50%;
+    width: 30%;
     border: 5px solid black;
     height: auto;
+    margin-left: 10%;
 }
 
 #customize {
     text-align: left;
-    width: 30%;
+    width: 150%;
 }
 
 .options {
-    width: 15%;
+    display: flex;
+    width: auto;
     text-align: left;
-    margin-left: auto;
-    margin-right: 50%;
+    flex-direction: column;
+    margin: auto;
+    width: 20%;
 }
 
 label {
@@ -119,7 +157,7 @@ label {
 
 select {
     font-size: x-large;
-    width: 230%;
+    width: 120%;
 }
 
 h1 a {
@@ -128,16 +166,14 @@ h1 a {
 
 .total {
     display: flex;
-    flex-direction: row;
-    width: 25%;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    margin-top: 20%;
 }
 
 button {
     background-color: yellow;
-    width: 100%;
+    width: 200%;
     height: 50px;
     font-weight: 600;
     font-size: x-large;
@@ -145,29 +181,58 @@ button {
 }
 
 /* Shopping Cart Page */
+.cart {
+    display: flex;
+    flex-direction: column;
+}
+
 .details img {
     border: 5px solid black;
-    width: 10%;
+    width: 200px;
     height: auto;
 }
 
 .cart-details {
-    text-align: center;
+    text-align: left;
+    width: 25%;
 }
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
 
 #border-short {
     border-bottom: 5px solid black;
-    width: 55%;
+    width: 75%;
     margin-bottom: 2%;   
     margin-right: auto;
     margin-left: auto;
 }
 
+#single-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+#single-line h2 {
+    width: 20%;
+    margin-left: 30%;
+}
+
 .total2 {
     display: flex;
-    flex-direction: row;
-    width: 10%;
+    flex-direction: column;
+    width: auto;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+#checkout-button {
+    width: 15%;
+    margin-left: 80%;
 }
