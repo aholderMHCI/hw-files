@@ -4,8 +4,9 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Homework 2</title>
+      <title>Homework 3</title>
       <link rel="stylesheet" href="style.css">
+      <script src="/js/app.js" defer></script>
    </head>
    <body>
       <!-- header logo section -->
@@ -27,25 +28,18 @@
                <!-- dropdown options for type of glaze -->
                <label for="glazing">Glazing:</label>
                <br>
-               <select name="glazing" id="glazing">
-                  <option value="">--Please choose an option--</option>
-                  <option value="keep original">Keep original</option>
-                  <option value="sugar milk">Sugar milk</option>
-                  <option value="vanilla milk">Vanilla milk</option>
-                  <option value="double chocolate">Double chocolate</option>
+               <select name="glazing" id="glazing"
+               onchange=glazingChange(this)>
                </select>
                <br><br>
                <!-- dropdown options for number of cinnamon rolls -->
                <label for="pack-size">Pack size:</label>
                <br>
-               <select name="pack-size" id="pack-size">
-                  <option value="1">1</option>
-                  <option value="3">3</option>
-                  <option value="6">6</option>
-                  <option value="12">12</option>
+               <select name="pack-size" id="pack-size"
+               onchange=sizingChange(this)>
                </select>
                <div class="total">
-                  <h3>$ 2.49</h3>
+                  <h3 id="total-price">$2.49</h3>
                   <button>Add to cart</button>
                </div>
             </div>
