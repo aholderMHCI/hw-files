@@ -119,3 +119,14 @@ function addToCart(myRoll) {
     console.log(cart);
 }
 
+// there may be an issue with base price here, check back on hw 4 to make sure it's right
+let roll1 = new Roll("Original", "sugar milk", 1, 2.49)
+let roll2 = new Roll("Walnut", "vanilla milk", 12, 39.90)
+let roll3 = new Roll("Raisin", "sugar milk", 3, 8.97)
+let roll4 = new Roll("Apple", "keep original", 3, 10.47)
+
+cart.push(roll1, roll2, roll3, roll4);
+console.log(cart);
+
+
+
