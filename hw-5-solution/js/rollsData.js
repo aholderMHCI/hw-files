@@ -22,5 +22,5 @@ const rolls = {
     "Strawberry": {
         "basePrice": 3.99,
         "imageFile": "strawberry-cinnamon-roll.jpeg"
-    }    
+    }
 };

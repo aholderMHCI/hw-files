@@ -94,39 +94,7 @@ let imgUrl = rolls[`${chosenRoll}`].imageFile;
 
 rollImage.src = './assets/' + imgUrl; 
 
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
-}
 
-const cart = [];
-let myRoll;
-
-function addToCart(myRoll) {
-    myRoll = new Roll();
-    myRoll.type = chosenRoll;
-    // I was confused by how to access the contents of the dropdown because whatever I was doing kept providing 
-    // the 'price' from the allGlazing array. This answer from stack overflow helped.
-    // https://stackoverflow.com/questions/3301688/how-do-you-get-the-currently-selected-option-in-a-select-via-javascript
-    myRoll.glazing = select.options[select.selectedIndex].text;
-    myRoll.size = packSize.options[packSize.selectedIndex].text;
-    myRoll.basePrice = cost;
-    cart.push(myRoll);
-    console.log(cart);
-}
-
-// there may be an issue with base price here, check back on hw 4 to make sure it's right
-let roll1 = new Roll("Original", "sugar milk", 1, 2.49)
-let roll2 = new Roll("Walnut", "vanilla milk", 12, 39.90)
-let roll3 = new Roll("Raisin", "sugar milk", 3, 8.97)
-let roll4 = new Roll("Apple", "keep original", 3, 10.47)
-
-cart.push(roll1, roll2, roll3, roll4);
-console.log(cart);
 
 
 

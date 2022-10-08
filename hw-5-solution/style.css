@@ -9,6 +9,7 @@ hr {
     height: 3px;
     background-color: black;
 }
+
 nav {
     display: flex;
     align-items: center;
@@ -35,8 +36,8 @@ nav {
 
 
 #wrapper {
-width: 100vw;
-height: auto;
+    width: 100vw;
+    height: auto;
 }
 
 #logo {
@@ -47,13 +48,13 @@ height: auto;
 }
 
 #border {
- border-bottom: 5px solid black;
- margin-bottom: 2%;
+    border-bottom: 5px solid black;
+    margin-bottom: 2%;
 }
 
 .column {
     text-align: center;
-}    
+}
 
 h1 {
     margin-left: auto;
@@ -122,7 +123,7 @@ a {
 /* Product Detail Page */
 
 .detail-flex {
-display: flex;
+    display: flex;
 }
 
 .detail-right {
@@ -203,16 +204,22 @@ button {
 
 .cart-item {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-evenly;
+    margin: 10px 0;
 }
 
+.delete-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
 
+}
 
 #border-short {
     border-bottom: 5px solid black;
     width: 75%;
-    margin-bottom: 2%;   
+    margin-bottom: 2%;
     margin-right: auto;
     margin-left: auto;
 }
