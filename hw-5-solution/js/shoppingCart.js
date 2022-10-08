@@ -42,7 +42,7 @@ class Roll {
         const rollBody2 = this.element.querySelector('.roll-body2');
         const price = this.element.querySelector('.price');
 
-        rollImageElement.src = "./assets/" + this.type + "-cinnamon-roll.jpeg";
+        rollImageElement.src = "./assets/" + (this.type).toLowerCase() + "-cinnamon-roll.jpeg";
         rollTitle.innerText = this.type + " Cinnamon Roll";
         rollBody1.innerText = "Glazing: " + this.glazing;
         rollBody2.innerText = "Pack size: " + this.size;
